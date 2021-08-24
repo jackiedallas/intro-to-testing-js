@@ -14,7 +14,15 @@ function helloWorld() {
 // }
 
 function sayHello(string){
-    return "Hello, " + string + "!";
+    if (string === true){
+        return helloWorld();
+    }
+    if(string){
+        return "Hello, " + string + "!";
+    } else {
+        return helloWorld();
+    }
+
 }
 
-sayHello('Alex');
+sayHello();
