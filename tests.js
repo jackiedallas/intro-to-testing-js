@@ -26,7 +26,7 @@ describe('sayHello', function (){
         expect(sayHello('Jane')).toBe("Hello, Jane!");
     });
     it("should return 'Hello, Alex!' when called", function () {
-        expect(sayHello("Alex")).toBe("Hello, Alex!");
+        expect(sayHello('Alex')).toBe("Hello, Alex!");
     });
     it("should return 'Hello, Pat!' when called", function () {
        expect(sayHello('Pat')).toBe("Hello, Pat!");
@@ -40,10 +40,19 @@ describe('sayHello', function (){
     it("should return 'Hello, World!' when false", function () {
         expect(sayHello(false)).toBe("Hello, World!");
     });
+    it("should return 'Hello, World!' when null", function (){
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!' when input is a number", function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!' when an array", function () {
+        expect(sayHello([''])).toBe("Hello, World!");
+    });
 });
 
 
-
+describe()
 
 
 
