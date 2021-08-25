@@ -40,19 +40,26 @@ describe('sayHello', function (){
     it("should return 'Hello, World!' when false", function () {
         expect(sayHello(false)).toBe("Hello, World!");
     });
-    it("should return 'Hello, World!' when null", function (){
-        expect(sayHello(null)).toBe("Hello, World!");
+    it("should not return 'Null' when called", function (){
+        expect(sayHello()).not.toBe(null);
     });
-    it("should return 'Hello, World!' when input is a number", function () {
-        expect(sayHello()).toBe("Hello, World!");
-    });
-    it("should return 'Hello, World!' when an array", function () {
-        expect(sayHello([''])).toBe("Hello, World!");
-    });
+    // it("should return 'Hello, World!' when input is a number", function () {
+    //     expect(sayHello()).toBe("Hello, World!");
+    // });
+    // it("should return 'Hello, World!' when an array", function () {
+    //     expect(sayHello([''])).toBe("Hello, World!");
+    // });
 });
 
 
-describe()
+// describe("isFive", function () {
+//     it("should be a defined function", function () {
+//         expect(typeof isFive).toBe('function');
+//     });
+//     it("input should be a number", function () {
+//         expect(isFive()).toBe('boolean');
+//     });
+// });
 
 
 
